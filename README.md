@@ -12,31 +12,18 @@ http://www.arduino.cc/en/Reference/Ethernet
 W5500 Shields
 -------------
 
-* [Adafruit W5500 Ethernet Shield](https://www.adafruit.com/products/2971)
 * [Arduino Ethernet Shield v2](https://www.arduino.cc/en/Main/ArduinoEthernetShieldV2)
-* [Industruino Ethernet module](https://industruino.com/shop/product/ethernet-expansion-module-10)
-* [Wiznet W5500 Ethernet Shield](http://www.wiznet.co.kr/product-item/w5500-ethernet-shield/)
 
+== How to use ==
 
-License
--------
+* Install Etherent2 library from Arduino IDE.
+* Copy 'w5500.cpp' file from 'src/utility' and overwrite to your Ethernet2 library 'libraries/Ethernet2/src/utility/w5100.cpp'.
 
-Copyright (c) 2009-2016 Arduino LLC. All right reserved.
+* Connect Ethernet Shield v2 to Axio-Builder with jumper wires as shown below.
 
-This library is free software; you can redistribute it and/or
-modify it under the terms of the GNU Lesser General Public
-License as published by the Free Software Foundation; either
-version 2.1 of the License, or (at your option) any later version.
+![w5100 arduino shield](https://raw.githubusercontent.com/sp-axio/Arduino_Ethernet2_for_Axio/master/eth2_w5500_axio.png "w5100 Ethernet shield v2 connect to Axio-Builder")
 
-This library is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-Lesser General Public License for more details.
-
-You should have received a copy of the GNU Lesser General Public
-License along with this library; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
-
-
-[W5100]:                   http://www.wiznet.co.kr/product-item/w5100/
-[W5500]:                   http://www.wiznet.co.kr/product-item/w5500/
+Note:
+* W5500 Ethernet shield uses ICSP pins(SPI) to communicate with the Axio-Builder(Arduino).
+* Digital pin 10 is used to SPI SSN.
+* This code was tested by the Arduino Ethernet Shield v2.
