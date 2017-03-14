@@ -71,7 +71,9 @@ void loop() {
           client.println("<html>");
           // output the value of each analog input pin
           for (int analogChannel = 0; analogChannel < 6; analogChannel++) {
-            int sensorReading = analogRead(analogChannel);
+            // Axio-Builder does not support analogRead()
+            // int sensorReading = analogRead(analogChannel);
+            int sensorReading = 1;
             client.print("analog input ");
             client.print(analogChannel);
             client.print(" is ");
