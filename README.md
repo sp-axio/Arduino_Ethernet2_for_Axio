@@ -1,4 +1,4 @@
-Ethernet "2" Library for Arduino
+Ethernet "2" Library for Arduino  [![Linux build status](https://travis-ci.org/sp-axio/Arduino_Ethernet2_for_Axio.svg?branch=master)](https://travis-ci.org/sp-axio/Arduino_Ethernet2_for_Axio)
 ================================
 
 This Arduino library is for shields that use the **Wiznet [W5500]** chipset only.
